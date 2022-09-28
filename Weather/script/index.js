@@ -1,3 +1,17 @@
+const Display = () => {
+    return `<div id="container"></div>
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0">
+            </iframe>
+        </div>
+    </div>`
+}
+
+document.getElementById("display").innerHTML = Display();
+
 let container = document.getElementById("container");
 
 const api_key = `d06f572a55f4c31aee40da047ef7ba15`
